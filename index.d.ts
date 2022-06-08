@@ -6,6 +6,7 @@ declare module 'react-confirm-alert' {
     buttons?: Array<{
       label: string
       className?: string
+      onClick?: () => void
     } & Partial<HTMLButtonElement>>
     childrenElement?: () => React.ReactNode
     customUI?: (customUiOptions: {
